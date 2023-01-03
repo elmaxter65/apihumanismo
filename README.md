@@ -15,14 +15,14 @@ Already a pro? Just edit this README.md and make it your own. Want to make it ea
 
 ```
 cd existing_repo
-git remote add origin https://git.ole.agency/mramos/apihumanismo.git
+git remote add origin https://github.com/elmaxter65/apihumanismo
 git branch -M main
 git push -uf origin main
 ```
 
 ## Integrate with your tools
 
-- [ ] [Set up project integrations](https://git.ole.agency/mramos/apihumanismo/-/settings/integrations)
+- [ ] [Set up project integrations](https://github.com/elmaxter65/apihumanismo)
 
 ## Collaborate with your team
 
