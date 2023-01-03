@@ -1,0 +1,58 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\SoftDeletes;
+
+class Newsletter extends Model
+{
+    use HasFactory, SoftDeletes;
+
+    /**
+     * The attributes that are mass assignable.
+     *
+     * @var array
+     */
+    protected $fillable = [
+        'code', 'name'
+    ];
+
+    /****************************************************************/
+    /************************ RELATIONS *****************************/
+    /****************************************************************/
+    public function user()
+    {
+        return $this->hasMany('App\Models\User', 'newsletter_id');
+    }
+
+    public function subscribeduser()
+    {
+        return $this->hasMany('App\Models\SubscribedUser', 'newsletter_id');
+    }
+
+    /****************************************************************/
+    /************************* SCOPES *******************************/
+    /****************************************************************/
+
+    public function scopeOrderByCreatedAtAsc($query)
+    {
+        return $query->orderBy('created_at', 'asc');
+    }
+
+    public function scopeOrderByCreatedAtDesc($query)
+    {
+        return $query->orderBy('created_at', 'desc');
+    }
+
+    public function scopeOrderByUpdatedAtAsc($query)
+    {
+        return $query->orderBy('updated_at', 'asc');
+    }
+
+    public function scopeOrderByUpdatedAtDesc($query)
+    {
+        return $query->orderBy('updated_at', 'desc');
+    }
+}

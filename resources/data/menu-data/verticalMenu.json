@@ -1,0 +1,48 @@
+{
+    "menu": [
+        {
+            "url": "posts",
+            "name": "Posts",
+            "icon": "archive",
+            "slug": "posts.index"
+        },
+        {
+            "url": "tags",
+            "name": "Tags",
+            "icon": "tag",
+            "slug": "tags.index"
+        },
+        {
+            "url": "themes",
+            "name": "Themes",
+            "icon": "sunrise",
+            "slug": "themes.index"
+        },
+        {
+            "url": "templates",
+            "name": "templates",
+            "icon": "columns",
+            "slug": "",
+            "submenu": [
+                {
+                    "url": "templates-init",
+                    "name": "init",
+                    "icon": "home",
+                    "slug": "templates-init.index"
+                },
+                {
+                    "url": "templates",
+                    "name": "content",
+                    "icon": "book",
+                    "slug": "templates.index"
+                }
+            ]
+        },
+        {
+            "url": "users",
+            "name": "Users",
+            "icon": "user",
+            "slug": "users.index"
+        }
+    ]
+}

@@ -1,0 +1,1 @@
+[10-Jan-2022 19:58:18 UTC] PHP Fatal error:  Cannot use isset() on the result of an expression (you can use "null !== expression" instead) in /home/apinebolusole/public_html/app/Http/Controllers/Api/ArticleController.php on line 114

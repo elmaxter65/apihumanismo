@@ -1,0 +1,94 @@
+.dataTables-Header {
+    margin: 2rem 0;
+}
+
+.btn-new {
+    border-radius: 0!important;
+}
+
+.search-content {
+    width: 100%!important ;
+}
+
+.search-content div {
+    width: 100%!important ;
+}
+
+.search-content div .dataTables_filter label {
+    width: 100%!important ;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: end;
+    padding: 0;
+    position: relative;
+}
+
+.search-content div .dataTables_filter label div {
+    width: 5%!important ;
+    border-radius: 0.25rem!important;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    border-right: 0;
+    position: absolute;
+    right: 1rem;
+    top: .6rem;
+    padding-top: .50rem;
+    padding-bottom: .50rem;
+}
+
+.search-content div .dataTables_filter label div svg {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.search-content div .dataTables_filter label input {
+    width: 100%!important ;
+    border-radius: 0.25rem!important;
+    margin: 0;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    border-color: #4b4b4b !important;
+}
+
+.author select, .category select, .status select, .language select {
+    border-radius: 0!important;
+}
+
+.author, .category, .status {
+    margin-right: 16px;
+}
+
+.paginate_button.page-item.previous {
+    margin-right: .4rem!important;
+}
+
+.paginate_button.page-item.previous a {
+    border-radius: 5rem!important;
+    width: 1rem;
+}
+
+
+.dataTables_paginate.paging_simple_numbers ul li:nth-last-child(2) a {
+    border-radius: 0 5rem 5rem 0;
+}
+
+.dataTables_paginate.paging_simple_numbers ul li:nth-child(2) a {
+    border-radius: 5rem 0 0 5rem;
+}
+
+.paginate_button.page-item.next {
+    margin-left: .4rem!important;
+    width: 1rem;
+}
+
+.paginate_button.page-item.next a {
+    border-radius: 5rem!important;
+}
+
+.dataTables_paginate.paging_simple_numbers {
+    padding-right: 3rem;
+}
+
